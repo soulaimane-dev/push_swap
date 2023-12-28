@@ -6,7 +6,7 @@
 /*   By: sbouabid <sbouabid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 20:31:57 by sbouabid          #+#    #+#             */
-/*   Updated: 2023/12/26 09:35:25 by sbouabid         ###   ########.fr       */
+/*   Updated: 2023/12/28 12:56:19 by sbouabid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,18 +39,6 @@ void	ft_push(t_stack **stack, t_stack *node)
 	}
 }
 
-// int	ft_strlen(char	*str)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	while (str[i])
-// 	{
-// 		i++;
-// 	}
-// 	return (i);
-// }
- 
 int	ft_strcmp(char	*s1, char *s2)
 {
 	while (*s1 == *s2 && *s1 && *s2)

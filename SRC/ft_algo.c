@@ -6,7 +6,7 @@
 /*   By: sbouabid <sbouabid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 18:57:06 by sbouabid          #+#    #+#             */
-/*   Updated: 2023/12/24 18:11:27 by sbouabid         ###   ########.fr       */
+/*   Updated: 2023/12/28 12:46:12 by sbouabid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,21 +57,15 @@ static void	ft_best_move(t_stack **a, t_stack **b)
 	size = ft_stack_size(*b) / 2;
 	while (curr != NULL)
 	{
-		if (curr->index > ft_last_index(*a) || curr->index == (*a)->index)
+		if (curr->index > ft_last_index(*a))
 			break ;
 		i++;
 		curr = curr->next;
 	}
-	if (i == 2)
-		sb(b);
 	if (i <= size)
-	{
 		rb(b);
-	}
-	else if (i > size)
-	{
+	else
 		rrb(b);
-	}
 }
 
 static void	temp_b_to_a(t_stack **a, t_stack **b)

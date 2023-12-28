@@ -6,7 +6,7 @@
 /*   By: sbouabid <sbouabid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:21:02 by sbouabid          #+#    #+#             */
-/*   Updated: 2023/11/21 20:48:40 by sbouabid         ###   ########.fr       */
+/*   Updated: 2023/12/28 12:13:35 by sbouabid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,13 +68,13 @@ char	*get_next_line(int fd)
 	static char	*tmp;
 	char		*line;
 
-	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0 
+	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0
 		|| BUFFER_SIZE >= 2147483647)
 		return (free(tmp), tmp = NULL, NULL);
 	tmp = read_buffer(fd, tmp);
 	line = read_line(tmp);
 	if (!line)
 		return (free(tmp), tmp = NULL, NULL);
-	tmp = next_line(tmp); 
-	return (line); 
+	tmp = next_line(tmp);
+	return (line);
 }

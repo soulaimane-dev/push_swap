@@ -6,16 +6,16 @@
 /*   By: sbouabid <sbouabid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 11:57:49 by sbouabid          #+#    #+#             */
-/*   Updated: 2023/12/26 11:57:18 by sbouabid         ###   ########.fr       */
+/*   Updated: 2023/12/28 16:52:43 by sbouabid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H 
+# define PUSH_SWAP_H
 
 # include <stdlib.h>
 # include <unistd.h>
- 
+
 typedef struct s_stack
 {
 	int				x;
@@ -25,7 +25,7 @@ typedef struct s_stack
 
 typedef struct s_temp
 {
-	int	i; 
+	int	i;
 	int	j;
 	int	x;
 	int	lp;
