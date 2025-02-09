@@ -14,6 +14,7 @@ do
 	if [ $ins -ge 5500 ]
 	then
 		echo -e "${RED}$ins"
+		echo -e "${RED} squence ${numbers}"
 		exit
 	else
 		echo -e "${GREEN}$ins"
